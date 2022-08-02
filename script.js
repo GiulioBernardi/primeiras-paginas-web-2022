@@ -20,14 +20,13 @@ function filtrarReceitas(categoriaEscolhida){
 }
 
 function mudaImagem(alo){
-    var algo = document.getElementsByClassName('favorito-vazio')
     console.log(alo.src)
 
 
-        if(alo.src == "http://127.0.0.1:5500/imagens/favorito-vazio.png"){
-            alo.src = "http://127.0.0.1:5500/imagens/favorito-preenchido.png"
+        if(alo.src == "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-vazio.png"){
+            alo.src = "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-preenchido.png"
         }else{
-            alo.src = "http://127.0.0.1:5500/imagens/favorito-vazio.png" 
+            alo.src = "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-vazio.png" 
         }
 
     
