@@ -14,6 +14,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;   
+    z-index: 1;
 }
 
 .conteudo-header{
@@ -34,7 +35,6 @@ body{
     margin-left: 30px;
     vertical-align: text-top;
     font-size: 32px;
-
 }
 
 .navbar{
@@ -66,8 +66,7 @@ body{
 }
 
 ul{
-    list-style: none;
-            
+    list-style: none;    
 }
 
 ul li{
@@ -84,7 +83,6 @@ ul li{
     place-items:  center;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 20px;
-
 }
 
 .receita{
@@ -94,6 +92,11 @@ ul li{
     border-radius: 8px;
     padding-bottom: 10px;
     box-shadow: 10px 10px 10px #aaaaaa;
+}
+
+.receita:hover{
+    transition: 0.2s;
+    transform: scale(0.98);
 }
 
 
