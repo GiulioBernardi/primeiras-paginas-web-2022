@@ -23,7 +23,7 @@ function mudaImagem(alo){
     console.log(alo.src)
 
 
-        if(alo.src == "imagens/favorito-vazio.png"){
+        if(alo.src == "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-vazio.png"){
             alo.src = "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-preenchido.png"
         }else{
             alo.src = "https://raw.githubusercontent.com/GiulioBernardi/primeiras-paginas-web-2022/main/imagens/favorito-vazio.png" 
