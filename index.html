@@ -4,7 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Receitas culinárias</title>
   </head>
-  <body></body>
+  <body>
+    <header class="cabecalho">
+      
+      <div class="conteudo-header">
+        <img class="imagem-header" src="imagens/icone.png" alt="chapéu de cozinheiro branco">
+        <h1 class="titulo-header">Receitas do Giulio</h1>
+
+        <div class="navbar">
+          <ul>
+            <li class="item-navbar"><button class="botao-navbar" onclick="filtrarReceitas('todas')">Todas</button></li>
+            <li class="item-navbar"><button class="botao-navbar" onclick="filtrarReceitas('bolos')">Bolos</button></li>
+            <li class="item-navbar"><button class="botao-navbar" onclick="filtrarReceitas('carnes')">Carnes</button></li>
+            <li class="item-navbar"><button class="botao-navbar" onclick="filtrarReceitas('bebidas')">Bebidas</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="conteudo">
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/picanha.png" alt="">
+        <p class="titulo-receita">Picanha</p>
+        <p class="categoria-receita">Carnes</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+      
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/carne-linguica.png" alt="">
+        <p class="titulo-receita">Linguiça</p>
+        <p class="categoria-receita">Carnes</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/suco-citricas.png" alt="">
+        <p class="titulo-receita">Suco</p>
+        <p class="categoria-receita">Bebidas</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt=""onclick="mudaImagem(this)">
+      </div>
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/bolo-morango.jpeg" alt="">
+        <p class="titulo-receita">Bolo de morango</p>
+        <p class="categoria-receita">Bolos</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/bolo-brigadeiro.png" alt="">
+        <p class="titulo-receita">Bolo de brigadeiro</p>
+        <p class="categoria-receita">Bolos</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/iogurte.png" alt="">
+        <p class="titulo-receita">Iogurte caseiro</p>
+        <p class="categoria-receita">Bebidas</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+
+      <div class="receita">
+        <img class="imagem-receita" src="imagens/frango.png" alt="">
+        <p class="titulo-receita">Frango assado</p>
+        <p class="categoria-receita">Carnes</p>
+        <img id="favoritar" class="favorito-vazio" src="imagens/favorito-vazio.png" alt="" onclick="mudaImagem(this)">
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
